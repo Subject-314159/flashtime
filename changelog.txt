@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2024-08-21
+  Bugfixes:
+    - Removed unwanted game.print
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2024-08-21
+  Features:
+    - Added settings to tweak game speed and character speed
+  Changes:
+    - Added random lightning bolts around the character when standing still
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2024-08-20
   Features:
