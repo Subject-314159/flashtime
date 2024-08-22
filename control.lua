@@ -8,7 +8,7 @@ local tick_update = function()
     for id, gp in pairs(global.players) do
         -- Get player & character
         local player = game.get_player(id)
-        if player and player.character then
+        if player and player.character and not player.vehicle then
             -- Increase tick counter since last lightning
             gp.ticks_since_lightning = (gp.ticks_since_lightning or 0) + 1
 
@@ -41,7 +41,7 @@ end
 local process_lightning = function(player_index)
     -- Get the player
     local player = game.get_player(player_index)
-    if not player or not player.character then
+    if not player or not player.character or player.vehicle then
         return
     end
 
